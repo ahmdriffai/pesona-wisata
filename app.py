@@ -10,7 +10,7 @@ from babel.numbers import format_currency
 
 
 
-uri = "mongodb+srv://ahmadrifai:0jKd5oZkn0lxQ0Jo@cluster0.1fzodwg.mongodb.net/?retryWrites=true&w=majority"
+uri = "mongodb+srv://zulian:zulian@cluster0.ttjbb4o.mongodb.net/?retryWrites=true&w=majority"
 
 # Create a new client and connect to the server
 client = MongoClient(uri, server_api=ServerApi('1'))
@@ -98,7 +98,6 @@ def logout():
     session["category"] = None
 
     return redirect("/")
-
 
 @app.route('/admin-wisata', methods=['POST', 'GET'])
 def wisata():
